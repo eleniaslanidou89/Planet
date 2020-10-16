@@ -4,7 +4,6 @@
   background-color: whitesmoke;
   text-align: center;
   width: 50%;
-  
 }
 
 .image{
@@ -53,5 +52,37 @@
 .title{
   font-size: 10px;
   text-align: left; 
+}
+
+/* contact page - add a comment */
+.app{
+  background: lightyellow;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+.btn{
+  background: pink;
+  margin: 20px;
+}
+
+
+.app-title{
+  text-align: center;
+  color: rgb(39, 90, 107);
+  font-size: 50px;
+}
+
+.fas {
+text-align: center;
+position: right;
+}
+.container{
+  border-radius: 25px;
+}
+
+.app-info{
+  text-align: center;
+  color: rgb(22, 23, 24);
+  font-size: 20px;
 }
 
