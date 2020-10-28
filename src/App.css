@@ -1,32 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
 /* image at the landing page*/
+
 .landing-grid{
-  background-color: whitesmoke;
   text-align: center;
-  width: 50%;
+}
+
+.text i{
+  height: 100px;
 }
 
 .image{
-  margin-left: 250px;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  margin-top: 80px;
+  width: 400px;
+  height: 400px;
+  margin-top: 80px; 
+}
+
+.text{
+  font-size: 20px;
+  margin-left: 100px;
+  text-align: center;
 }
 
 /* social links */
-.social-links{
-  display: flex;
-  justify-content: space-between;
-  width: 30%;
-  margin: auto;
+.btnSocialMedia, .fab{
+  border-radius: 50px;
+  background-color: rgb(115, 115, 216);
+  color: azure;
+}
+
+.btnSocialMedia{
+  margin-left: 100px;
 }
 
 .social-links i{
   color: rgb(12, 12, 12);
-  font-size: 3em;
- 
+  font-size: 1em;
   margin-left: 50px;
+}
+
+/* menu */
+.soupMenu{
+ width: 100%;
+ height: 30%;
+}
+
+.Soup{
+  width: 150px;
+  height: 150px;
+  margin: 40px;
+  border-radius: 50%;
+}
+
+.SoupBroc{
+  margin:0;
+  padding-left: 60px;
+}
+
+.SoupBro{
+  margin:0;
+  padding-left: 120px;
+}
+
+.brocolli{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.text{
+  font-size: 15px;
+}
+
+.bs{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.textMenu{
+  margin-top: 50px;
+}
+.textBrocolli{
+  margin-top: 50px;
 }
 
 .banner-text h1 {
@@ -60,11 +116,11 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
 }
+
 .btn{
   background: pink;
   margin: 20px;
 }
-
 
 .app-title{
   text-align: center;
@@ -76,6 +132,7 @@
 text-align: center;
 position: right;
 }
+
 .container{
   border-radius: 25px;
 }
@@ -86,3 +143,64 @@ position: right;
   font-size: 20px;
 }
 
+/* contact */ 
+.title{
+  padding-top: 1em;
+  font-size: 10px;
+  background-color: rgb(211, 120, 120);
+  border-radius: 25%;
+}
+
+.title h2{
+  font-family: 'Dancing Script', cursive;
+  color: black;
+  font-weight: bold;
+}
+
+.submit{
+  border: none;
+  background-color: burlywood;
+  border-radius: 10%;
+  width: 150px;
+  height: 30px;
+  color: rgb(214, 151, 93);
+}
+
+.soupMENU{
+  width: 100%;
+  height: 50%;
+ }
+
+ 
+/* Tablet view 
+@media only screen and (min-width: 768px){
+  .image{
+    margin-left: 0px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .soupMenu{
+    margin-left: 0px;
+    width: 150px;
+    height: 150px;
+  }
+
+}
+
+/* Mobile view 
+@media only screen and (max-width: 767px){
+  .image{
+    margin-left: 0px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .soupMenu{
+    margin-left: 0px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+*/

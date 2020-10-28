@@ -1,3 +1,66 @@
+
+Genom den här sidan man ha möjlighet att välja hälsosam mat och bidra till sund livsstil. Kunder kan bäställa soppor, blommor och kort.
+I startsida har man möjlighet att logga in med facebook eller kan ange telefonnummer eller ta skip.Dessutom kan man välja vilken soppa 
+gillar och bland annat agera rabbat kod. Jag försökte att detaljer om produkter vara lätt att skanna.
+Vidare kan man betala med olika sätt(swish,klarna,paypal) och det finns deskrivning av soppor(ingredients). 
+Jag tror att det är bra att man kan dela soppor med till exempel sina vänner eller familj. 
+Jag har läggt till en placeholder för att skriva comments. Till exempel kan man efter bäställning skriva en comment angående 
+hur upplevde sin bäställning. I sidan myMap finns det en map som visar position.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

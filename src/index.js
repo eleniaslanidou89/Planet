@@ -6,11 +6,15 @@ import App from './App';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 
+import 'leaflet/dist/leaflet.css';
+
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <BrowserRouter>
     <App />
+  
+ 
   </BrowserRouter>,
   document.getElementById('root')
 )

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { render } from '@testing-library/react';
-import { Grid, Cell, Layout } from 'react-mdl';
+import { Grid, Cell, Layout, Textfield, Button } from 'react-mdl';
 
-class App extends Component {
+class card extends Component {
     constructor(props){
         super(props);
 
@@ -49,21 +48,27 @@ class App extends Component {
             this.setState({list: updateList});
         }
 
-        render() {
-            return ( 
-            
-                   <div className="app">
-                        <h1 className="app-title">Contact</h1>
-                            <ul className="app-info">
-                                <i className="fas fa-phone-volume"></i> 08 400 548 02 <br/>
-                                Questions & support <br/>
-                                <i className="fas fa-envelope-open"></i> info@Vinden.com<br/>
-                                Partnership & Sales <br/>
-                                <i className="fas fa-envelope-open"></i> partnership@Vinden.com<br/>
-                                Press<br/>
-                                <i className="fas fa-envelope-open"></i> press@Vinden.com
-                            </ul>
-                   <div className="container">
+    render () {
+        return(
+            <div  className="container" style={{width: '100%', margin: 'auto'}}>
+                <Layout >
+                    <Grid className="landing-grid">
+                        <Cell col={7}> 
+                            
+                            <h1>Customize your card</h1>
+                            <h5>Choose bouquet size</h5>
+                           
+      <input type="radio" value="small" name="gender" /> Small
+                            <img src="https://www.flaticon.com/svg/static/icons/svg/2446/2446709.svg" style={{width: '10%', margin: 'auto'}}/>
+                            <p> 59;-</p>
+                            <input type="radio" value="medium" name="gender" /> Medium
+                            <img src="https://www.flaticon.com/svg/static/icons/svg/2446/2446709.svg" style={{width: '10%', margin: 'auto'}}/>
+                            <p> 79;-</p>
+                            <input type="radio" value="big" name="gender" /> Big
+                            <img src="https://www.flaticon.com/svg/static/icons/svg/2446/2446709.svg" style={{width: '10%', margin: 'auto'}}/>
+                            <p> 89;-</p><br/>
+
+                            <div className="container">
                         <div
                             style={{
                             padding: 10,
@@ -71,11 +76,11 @@ class App extends Component {
                             maxWidth: 800
                             }}
                         >
-                        Add a Comment...
+                        Add a greeding...
                             <br />
                             <input
                             type="text"
-                            placeholder="Type comment here..."
+                            placeholder="Type greeding here..."
                             value={this.state.newItem}
                             onChange={e => this.updateInput("newItem", e.target.value)}
                             />
@@ -83,7 +88,7 @@ class App extends Component {
                                         onClick={() => this.addItem()}
                                         disabled={!this.state.newItem.length}
                                     >
-                                    <i className="far fa-plus-square"></i>
+                                    <i class="far fa-plus-square"></i>
                                 </button>
                                     <br/> <br/>
                                     <ul>
@@ -92,7 +97,7 @@ class App extends Component {
                                         <li key={item.id}>
                                             {item.value}
                                             <button className="btn btn-floating" onClick={() => this.deleteItem(item.id)}>
-                                                <i className="fas fa-times"></i>
+                                                <i class="fas fa-times"></i>
                                             </button>                                      
                                         </li>
                                         );
@@ -100,10 +105,14 @@ class App extends Component {
                                     </ul>
                             </div>
                     </div> 
-                    </div>
-    );
+                           
+                           <br/>
+                            <Button className="submit"  href="/paymentMethod">Submit</Button>
+                        </Cell>    
+                    </Grid>
+                </Layout>
+            </div>   
+        )
+    }
 }
-}
-
-
-export default App;
+export default card;

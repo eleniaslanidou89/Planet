@@ -6,6 +6,8 @@ import Main from './components/main';
 import { Link } from 'react-router-dom';
 
 
+
+
 import { Button } from '@material-ui/core';
 
 
@@ -38,15 +40,16 @@ componentDidMount() {
             <div className="App">
 
            
-                <div className="demo-big-content">
+                <div className="demo">
     <Layout>
        
-        <Header title={<Link style={{ textDecoration: 'none', color: 'white' }} to="/">Planet</Link>} scroll>
+        <Header className='header-color' style={{backgroundColor: 'whitesmoke'}} title={<Link style={{ textDecoration: 'none',  color:'black' }} ></Link>} scroll >
 
             <Navigation>
-            <Link to="/aboutus">About us</Link>
-            <Link to="/contact">Contact</Link>
-                <Button color="primary">BLOG</Button>
+            <Link to="/aboutus"></Link>
+            <Link to="/contact"></Link>
+            <Link style={{color:'black'}} to="/menu">Skip</Link>
+                <Button color="primary"></Button>
                 <Textfield
                                 value=""
                                 onChange={() => {}}
@@ -57,14 +60,21 @@ componentDidMount() {
                             />
             </Navigation>
         </Header>
-        <Drawer title={<Link style={{textDecoration: 'none', color: 'blue', fontSize: '25px'}} to="/">Planet</Link>} >
+        <Drawer title={<Link style={{textDecoration: 'none', color: 'blue', fontSize: '25px'}} to="/">Soup Online</Link>} >
             <Navigation>
-            <Link to="/aboutus">About us</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/"><i class="fas fa-bars"></i>Go to food menu</Link>
+            <Link to="/"><i class="fas fa-user"></i>My account</Link>
+            <Link to="/"><i class="fas fa-soup"></i>My orders</Link>
+            <Link to="/"><i class="fas fa-heart"></i>Favorites</Link>
+            <Link to="/"><i class="fas fa-gift"></i>Coupons</Link>
+            <Link to="/"><i class="far fa-question-circle"></i>Help</Link>
+            <Link to="/"><i class="fas fa-angle-double-right"></i>More</Link>
+            <Link to="/"><i class="far fa-sign-out"></i>Sign out</Link>
             </Navigation>
         </Drawer>
         <Content>
             <div className="page-content" />
+            
         <Main/>
         </Content>
     </Layout>
