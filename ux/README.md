@@ -65,7 +65,6 @@ hur upplevde sin bäställning. I sidan myMap finns det en map som visar positio
 
 
 
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
